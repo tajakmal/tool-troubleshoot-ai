@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// SBD Brand Colors
+				sbd: {
+					yellow: '#FFDB0A',
+					charcoal: '#231F20',
+					black: '#000000',
+					white: '#FFFFFF',
+					orange: '#E9832F',
+					lightgray: '#F5F5F5',
+					midgray: '#9A9A9A'
 				}
 			},
 			borderRadius: {
@@ -84,11 +95,23 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'typing-dot': {
+					'0%': { opacity: '0.2' },
+					'20%': { opacity: '1' },
+					'100%': { opacity: '0.2' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'typing-dot-1': 'typing-dot 1.4s infinite 0s',
+				'typing-dot-2': 'typing-dot 1.4s infinite 0.2s',
+				'typing-dot-3': 'typing-dot 1.4s infinite 0.4s'
+			},
+			fontFamily: {
+				montserrat: ['Montserrat', 'Helvetica Neue', 'Arial', 'sans-serif'],
+				opensans: ['Open Sans', 'Helvetica Neue', 'Arial', 'sans-serif']
 			}
 		}
 	},
